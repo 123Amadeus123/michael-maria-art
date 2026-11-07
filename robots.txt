@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://123amadeus123.github.io/michael-maria-art/sitemap.xml
