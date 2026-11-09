@@ -114,6 +114,16 @@
     .gallery {
       background: #141414;
     }
+    .artwork { max-width: 960px; margin: 45px auto 0; }
+    .artwork-image { position: relative; aspect-ratio: 4 / 3; overflow: hidden; }
+    /* Display the photograph (rows 680–1399) without the upload's black bars. */
+    .artwork-image img {
+      display: block; position: absolute; width: 100%; height: auto;
+      top: 0; left: 0; transform: translateY(-32.708032708%);
+    }
+    .artwork figcaption { padding: 24px 12px 0; }
+    .artwork h3 { color: var(--gold); font-size: clamp(18px, 3vw, 26px); font-weight: normal; letter-spacing: 2px; line-height: 1.5; margin: 0; }
+    .artwork figcaption p { font: 11px Arial, sans-serif; letter-spacing: 3px; color: #c7c2bb; margin-top: 12px; }
     .contact {
       background: #100f0d;
     }
@@ -175,11 +185,17 @@
     <div class="eyebrow">Selected Works</div>
     <h2>THE COLLECTION</h2>
     <div class="line"></div>
-    <p class="section-text">
-      Die Galerie wird derzeit neu zusammengestellt.
-      Ausgewählte Werke von Michael Maria werden hier präsentiert,
-      sobald die überarbeiteten Fotografien bereitstehen.
-    </p>
+    <figure class="artwork">
+      <div class="artwork-image">
+        <img src="images/in-god-we-trust.png" width="960" height="2079"
+             alt="I.G.W.T. – In God We Trust von Michael Maria: pink-goldenes Werk mit neongelbem Passepartout im weißen Rahmen."
+             loading="lazy" decoding="async">
+      </div>
+      <figcaption>
+        <h3>I.G.W.T. – IN GOD WE TRUST</h3>
+        <p>MICHAEL MARIA</p>
+      </figcaption>
+    </figure>
   </section>
 
   <section id="about">
