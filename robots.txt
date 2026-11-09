@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.michael-maria-art.com/sitemap.xml
