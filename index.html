@@ -132,6 +132,8 @@
       letter-spacing: 2px;
       line-height: 2;
     }
+    footer a { color: var(--gold); text-underline-offset: 4px; }
+    .legal address { font-style: normal; }
     @media (max-width: 700px) {
       header {
         flex-direction: column;
@@ -205,10 +207,28 @@
       vip@michael-maria-art.com
     </a>
   </section>
+  <section class="legal" id="impressum" aria-labelledby="impressum-title">
+    <h2 id="impressum-title">Impressum</h2>
+    <div class="line"></div>
+    <div class="section-text">
+      <p>Angaben gemäß § 5 DDG</p>
+      <address>
+        Ferhat Nikpour Rahmatabady<br>
+        Künstlername: Michael Maria<br>
+        Wischlinger Weg 219<br>
+        44379 Dortmund<br>
+        Deutschland
+      </address>
+      <p>Kontakt:<br>
+        <a class="email" href="mailto:vip@michael-maria-art.com">vip@michael-maria-art.com</a>
+      </p>
+    </div>
+  </section>
 </main>
 
 <footer>
-  © 2026 MICHAEL MARIA — DIVINE ART
+  © 2026 MICHAEL MARIA — DIVINE ART<br>
+  <a href="#impressum">Impressum</a>
 </footer>
 
 </body>
