@@ -44,9 +44,10 @@
     h3{font-size:clamp(21px,3vw,29px);font-weight:400;line-height:1.35;letter-spacing:.05em}
     .description{font-size:clamp(17px,2vw,20px);line-height:1.85;color:var(--muted);max-width:800px;margin:24px auto 0}
     .gallery{background:var(--panel)}
-    figure{margin:50px auto 0;max-width:860px}
-    .artwork-image{width:100%;aspect-ratio:4/3;overflow:hidden;background:#28241f;border:1px solid var(--border)}
-    .artwork-image img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+    .artwork-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px 28px;margin-top:50px}
+    figure{margin:0;min-width:0}
+    .artwork-image{display:block;width:100%;aspect-ratio:4/3;overflow:hidden;background:#28241f;border:1px solid var(--border)}
+    .artwork-image img{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
     figcaption{padding:22px 8px 0;text-align:center}
     figcaption h3{color:var(--gold);margin:0}
     figcaption p{font:12px Arial,sans-serif;letter-spacing:.16em;color:var(--muted);line-height:1.7}
@@ -63,7 +64,7 @@
     .legal a{color:var(--gold);text-underline-offset:4px}
     footer{text-align:center;border-top:1px solid var(--border);padding:27px 24px;color:var(--muted);font:12px/2 Arial,sans-serif;letter-spacing:.1em}
     footer a{color:var(--gold);margin:0 10px;text-decoration:underline;text-underline-offset:4px}
-    @media(max-width:700px){.topbar{padding:20px 18px;flex-direction:column;gap:20px}nav{justify-content:center;gap:14px}.hero{min-height:70vh;padding:65px 18px}h1{letter-spacing:.035em}.subtitle{letter-spacing:.28em}.eyebrow{letter-spacing:.23em}.two-col{grid-template-columns:1fr;gap:25px}.quote{margin:0}.artwork-image{aspect-ratio:4/3}}
+    @media(max-width:700px){.topbar{padding:20px 18px;flex-direction:column;gap:20px}nav{justify-content:center;gap:14px}.hero{min-height:70vh;padding:65px 18px}h1{letter-spacing:.035em}.subtitle{letter-spacing:.28em}.eyebrow{letter-spacing:.23em}.artwork-grid{grid-template-columns:1fr;gap:36px}.two-col{grid-template-columns:1fr;gap:25px}.quote{margin:0}.artwork-image{aspect-ratio:4/3}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
   </style>
 </head>
@@ -95,6 +96,67 @@
         <h2 id="art-title">THE COLLECTION</h2>
         <div class="line" aria-hidden="true"></div>
         <p class="description">Worte werden zu Bildern. Gestempelte Botschaften treffen auf Glitzerpapier, Neonpapier und ausgewählte klassische Papiere – präsentiert in sorgfältig abgestimmten Rahmen.</p>
+        <div class="artwork-grid">
+        <figure>
+          <a class="artwork-image" href="images/in-god-we-trust-schwarz-gold.webp" target="_blank" rel="noopener" aria-label="IN GOD WE TRUST – Bild in voller Größe öffnen">
+            <img src="images/in-god-we-trust-schwarz-gold.webp" width="1086" height="1448" alt="IN GOD WE TRUST von Michael Maria: Schwarzer Glitzergrund, goldener Rahmen und goldene Stiefelsignatur." loading="lazy" decoding="async">
+          </a>
+          <figcaption><h3>IN GOD WE TRUST</h3><p>MICHAEL MARIA · DIVINE ART</p></figcaption>
+        </figure>
+        <figure>
+          <a class="artwork-image" href="images/in-god-we-trust-passepartout.webp" target="_blank" rel="noopener" aria-label="IN GOD WE TRUST – Bild in voller Größe öffnen">
+            <img src="images/in-god-we-trust-passepartout.webp" width="1448" height="1086" alt="IN GOD WE TRUST von Michael Maria: Schwarzer Glitzergrund mit gestaltetem weißem Passepartout und goldenem Rahmen." loading="lazy" decoding="async">
+          </a>
+          <figcaption><h3>IN GOD WE TRUST</h3><p>MICHAEL MARIA · DIVINE ART</p></figcaption>
+        </figure>
+        <figure>
+          <a class="artwork-image" href="images/god-bless-quadrat.webp" target="_blank" rel="noopener" aria-label="GOD BLESS – Bild in voller Größe öffnen">
+            <img src="images/god-bless-quadrat.webp" width="1254" height="1254" alt="GOD BLESS von Michael Maria: Gelbe Schrift auf pinkfarbenem Grund mit pinkfarbenem Rahmen, quadratische Aufnahme." loading="lazy" decoding="async">
+          </a>
+          <figcaption><h3>GOD BLESS</h3><p>MICHAEL MARIA · DIVINE ART</p></figcaption>
+        </figure>
+        <figure>
+          <a class="artwork-image" href="images/in-god-we-trust-pink.webp" target="_blank" rel="noopener" aria-label="IN GOD WE TRUST – Bild in voller Größe öffnen">
+            <img src="images/in-god-we-trust-pink.webp" width="1254" height="1254" alt="IN GOD WE TRUST von Michael Maria: Dunkle Schrift auf pinkfarbenem Glitzergrund im goldenen Rahmen." loading="lazy" decoding="async">
+          </a>
+          <figcaption><h3>IN GOD WE TRUST</h3><p>MICHAEL MARIA · DIVINE ART</p></figcaption>
+        </figure>
+        <figure>
+          <a class="artwork-image" href="images/yes.webp" target="_blank" rel="noopener" aria-label="YES – Bild in voller Größe öffnen">
+            <img src="images/yes.webp" width="1254" height="1254" alt="YES von Michael Maria: Gelbe Schrift auf pinkfarbenem Wellenrelief im silberfarbenen Rahmen." loading="lazy" decoding="async">
+          </a>
+          <figcaption><h3>YES</h3><p>MICHAEL MARIA · DIVINE ART</p></figcaption>
+        </figure>
+        <figure>
+          <a class="artwork-image" href="images/pray.webp" target="_blank" rel="noopener" aria-label="PRAY – Bild in voller Größe öffnen">
+            <img src="images/pray.webp" width="1254" height="1254" alt="PRAY von Michael Maria: Gelbe Schrift auf orangefarbenem Grund mit weißem Passepartout und rotem Rahmen." loading="lazy" decoding="async">
+          </a>
+          <figcaption><h3>PRAY</h3><p>MICHAEL MARIA · DIVINE ART</p></figcaption>
+        </figure>
+        <figure>
+          <a class="artwork-image" href="images/in-god-we-trust-kupfer.webp" target="_blank" rel="noopener" aria-label="IN GOD WE TRUST – Bild in voller Größe öffnen">
+            <img src="images/in-god-we-trust-kupfer.webp" width="1448" height="1086" alt="IN GOD WE TRUST von Michael Maria: Kupferfarbene Schrift auf grauem Grund im kupferfarbenen Rahmen." loading="lazy" decoding="async">
+          </a>
+          <figcaption><h3>IN GOD WE TRUST</h3><p>MICHAEL MARIA · DIVINE ART</p></figcaption>
+        </figure>
+        <figure>
+          <a class="artwork-image" href="images/angels-are-surrounding-me.webp" target="_blank" rel="noopener" aria-label="ANGELS ARE SURROUNDING ME – Bild in voller Größe öffnen">
+            <img src="images/angels-are-surrounding-me.webp" width="1448" height="1086" alt="ANGELS ARE SURROUNDING ME von Michael Maria: Schwarze Schrift auf rosa Glitzergrund mit weißem Passepartout im goldenen Rahmen." loading="lazy" decoding="async">
+          </a>
+          <figcaption><h3>ANGELS ARE SURROUNDING ME</h3><p>MICHAEL MARIA · DIVINE ART</p></figcaption>
+        </figure>
+        <figure>
+          <a class="artwork-image" href="images/in-divine-timing.webp" target="_blank" rel="noopener" aria-label="IN DIVINE TIMING – Bild in voller Größe öffnen">
+            <img src="images/in-divine-timing.webp" width="1448" height="1086" alt="IN DIVINE TIMING von Michael Maria: Metallisch schimmernde Schrift auf neonpinkfarbenem Grund im verzierten goldfarbenen Rahmen." loading="lazy" decoding="async">
+          </a>
+          <figcaption><h3>IN DIVINE TIMING</h3><p>MICHAEL MARIA · DIVINE ART</p></figcaption>
+        </figure>
+        <figure>
+          <a class="artwork-image" href="images/god-bless-querformat.webp" target="_blank" rel="noopener" aria-label="GOD BLESS – Bild in voller Größe öffnen">
+            <img src="images/god-bless-querformat.webp" width="1448" height="1086" alt="GOD BLESS von Michael Maria: Gelbe Schrift auf pinkfarbenem Grund mit pinkfarbenem Rahmen, Querformataufnahme." loading="lazy" decoding="async">
+          </a>
+          <figcaption><h3>GOD BLESS</h3><p>MICHAEL MARIA · DIVINE ART</p></figcaption>
+        </figure>
         <figure>
           <div class="artwork-image">
             <img src="images/in-god-we-trust.png" width="960" height="2079" alt="I.G.W.T. – In God We Trust: Kunstwerk von Michael Maria in Weiß gerahmt mit leuchtend farbiger Gestaltung." loading="lazy" decoding="async">
@@ -104,6 +166,7 @@
             <p>MICHAEL MARIA · DIVINE ART</p>
           </figcaption>
         </figure>
+        </div>
       </div>
     </section>
 
